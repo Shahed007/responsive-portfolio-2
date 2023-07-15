@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+/* Color */
+:root {
+  --bg-color-primary: #fff8f3;
+  --font-color-primary: #181818;
+  --font-color-secondary: #474747;
+  --font-color-third: #757575;
+  --btn-color-primary: #fd6e0a;
+}
+
+/* Basic Customization */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
+}
+
+/* Reusable Class */
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  display: inline-block;
+  padding: 1.5rem 3.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--btn-color-primary);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--btn-color-primary);
+  border: 2px solid var(--btn-color-primary);
+  margin-left: 1rem;
+}
+
+.section-title-box {
+  text-align: center;
+}
+
+.section-title {
+  color: var(--font-color-primary);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.section-description {
+  margin: 3rem auto;
+  color: var(--font-color-third);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  width: 75%;
+}
+
+/* Main-Navigation Styling */
+nav {
+  padding: 2rem 1rem;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > div > ul {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav > div > ul li {
+  list-style: none;
+}
+
+nav > div > ul li:not(:last-child) {
+  margin-right: 5rem;
+}
+
+nav > div > ul li a:link,
+a:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--font-color-secondary);
+}
+
+nav > div .logo {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--font-color-primary);
+  letter-spacing: 1px;
+}
+
+nav > div .logo .logo-highlight {
+  color: var(--btn-color-primary);
+}
+
+/* CSS Banner Section Styling */
+.header {
+  height: 100vh;
+  background-color: var(--bg-color-primary);
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, bottom left;
+  background-size: 550px, 85px;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 3rem 3rem 3rem 17rem;
+}
+
+.banner-text {
+  width: 65%;
+}
+
+.banner-title-secondary {
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--font-color-secondary);
+  margin-bottom: 0.1rem;
+}
+
+.banner-title-primary {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--font-color-primary);
+  margin-bottom: 2rem;
+}
+
+.banner-description {
+  font-size: 1.8rem;
+  color: var(--font-color-third);
+  line-height: 3rem;
+  width: 80%;
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+
+.banner-image {
+  margin-bottom: -2rem;
+  width: 35%;
+  justify-self: flex-end;
+}
+.banner-image img {
+  width: 40rem;
+  height: 52.1rem;
+}
+
+/* About me Section Styling */
+.about-section {
+  padding: 10rem 10rem;
+  background-color: var(--bg-color-primary);
+  margin: 13rem 20rem;
+  border-radius: 5px;
+}
+
+.about-section_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-section-item {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.about-section-item h4 {
+  color: var(--font-color-primary);
+}
+
+.about-section-item p {
+  color: var(--font-color-secondary);
+}
+
+/* What I Do Styling */
+.section-what-do-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.section-what-do-item {
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+}
+
+.section-what-do-item h4 {
+  color: var(--font-color-primary);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 1rem 0 2rem 0;
+}
+
+.section-what-do-item p {
+  font-size: 1.6rem;
+  color: var(--font-color-third);
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* Resume Section Styling */
+.resume-section {
+  margin-top: 13rem;
+}
+
+.resume-section-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+  margin: 3rem 0;
+}
+
+.resume-section-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.resume-section-item {
+}
+
+.resume-section-item:not(:last-child) {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.resume-section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--font-color-secondary);
+}
+
+.resume-section-item-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--font-color-secondary);
+  margin-bottom: 1rem;
+}
+
+.resume-section-item-sub-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--font-color-third);
+  margin-bottom: 2rem;
+}
+
+.resume-section-item-description {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: var(--font-color-third);
+  width: 80%;
+}
+
+.resume-item-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Section Styling */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.footer-column {
+  width: 50%;
+}
+
+.footer {
+  margin-top: 13rem;
+  padding: 13rem 0;
+  background-color: var(--bg-color-primary);
+}
+
+.footer .section-title {
+  text-align: left;
+}
+
+.footer-column-description {
+  color: var(--font-color-secondary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 2.8rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.footer-contact-form {
+  margin-top: 3rem;
+}
+
+.footer-contact-form input[type="text"],
+.footer-contact-form input[type="email"],
+textarea {
+  display: block;
+  width: 70%;
+  padding: 1.5rem 3rem;
+  margin-bottom: 2.4rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+}
