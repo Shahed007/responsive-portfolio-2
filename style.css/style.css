@@ -207,7 +207,8 @@ nav > div .logo .logo-highlight {
 
 .section-what-do-item {
   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.2);
-  padding: 3rem;
+  padding: 2rem;
+  width: calc((100% - 2.4rem) / 3);
 }
 
 .section-what-do-item h4 {
@@ -241,8 +242,6 @@ nav > div .logo .logo-highlight {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-}
-.resume-section-item {
 }
 
 .resume-section-item:not(:last-child) {
@@ -336,6 +335,8 @@ textarea {
 }
 
 /* RESPONSIVE STYLE APPLY */
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+}
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .container {
     max-width: 100%;
@@ -371,6 +372,21 @@ textarea {
   }
 
   .footer-column-description {
+    text-align: center;
+  }
+
+  .resume-section-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .resume-section-item-description {
+    padding-bottom: 1rem;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .resume-section-title {
     text-align: center;
   }
 }
@@ -413,5 +429,32 @@ textarea {
   }
   .footer-column-description {
     text-align: center;
+  }
+
+  .resume-section-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .resume-section-column {
+    row-gap: 1rem;
+  }
+
+  .resume-section-item-description {
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  .resume-section-item {
+    width: 100%;
+  }
+
+  .section-what-do-container {
+    flex-direction: column;
+  }
+
+  .section-description {
+    width: 100%;
+    line-height: 2.5rem;
   }
 }
