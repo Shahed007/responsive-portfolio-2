@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -202,6 +203,7 @@ nav > div .logo .logo-highlight {
 .section-what-do-container {
   display: flex;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
   gap: 2.4rem;
 }
 
@@ -335,7 +337,21 @@ textarea {
 }
 
 /* RESPONSIVE STYLE APPLY */
-@media screen and (min-width: 577px) and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 100%;
+    padding: 3rem;
+  }
+  .section-what-do-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-what-do-item {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .container {
@@ -449,9 +465,16 @@ textarea {
     width: 100%;
   }
 
-  .section-what-do-container {
+  /* .section-what-do-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
+
+  .section-what-do-item {
+    width: 100%;
+  } */
 
   .section-description {
     width: 100%;
